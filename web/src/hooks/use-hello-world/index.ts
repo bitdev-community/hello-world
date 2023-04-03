@@ -1,2 +1,2 @@
-import useHelloWorld from './use-hello-world';
-export default useHelloWorld;
+import { useHelloWorld } from "./use-hello-world";
+export { useHelloWorld };

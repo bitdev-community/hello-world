@@ -1,7 +1,7 @@
 import cx from 'classnames';
 import { Button } from '../../ui/button';
 import { Heading } from '../../ui/heading';
-import useHelloWorld from '../../hooks/use-hello-world';
+import { useHelloWorld } from '../../hooks/use-hello-world';
 import './landing-page.scss'
 import { HTMLAttributes } from 'react';
 
@@ -10,22 +10,23 @@ export type LandingPageProps = {
 } & HTMLAttributes<HTMLDivElement>
 
 export const LandingPage = ({className, ...rest}: LandingPageProps) => {
-  const [{ data, loading, error }, fetchData] = useHelloWorld();
+  const [helloWorldState, fetchHelloWorld] = useHelloWorld();
 
-  if (loading) {
+
+  if (helloWorldState.loading) {
     return <p {...rest}>Loading...</p>;
   }
 
-  if (error) {
-    return <p {...rest}>Error: {error.message}</p>;
+  if (helloWorldState.error) {
+    return <p {...rest}>Error: {helloWorldState.error.message}</p>;
   }
   
   return (
     <div className={cx("container", className)} {...rest}>
-      {data ? (
-        <Heading>{data}</Heading>
+      {helloWorldState.data ? (
+        <Heading>{helloWorldState.data}</Heading>
       ) : (
-        <Button onClick={fetchData}>Load Data</Button>
+        <Button onClick={fetchHelloWorld}>Load Data</Button>
       )}
     </div>
   )

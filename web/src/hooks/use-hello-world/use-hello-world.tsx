@@ -1,31 +1,41 @@
 import { useState } from 'react';
-import { useGreetings } from '../../providers/greetings-provider';
 
-interface DataState<T> {
-  data: T | null;
+interface HelloWorldState {
+  data: string | null;
   loading: boolean;
   error: Error | null;
 }
 
-const useHelloWorld = (): [DataState<string>, () => void] => {
+export const useHelloWorld = (): [HelloWorldState, () => Promise<void>] => {
   const [data, setData] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<Error | null>(null);
-  const { axiosInstance } = useGreetings();
-
-  const fetchData = async () => {
+  const host = process.env.REACT_APP_HELLO_API_HOST || 'https://hello.bitexamples.com';
+  
+  const fetchHelloWorld = async () => {
     try {
       setLoading(true);
-      const response = await axiosInstance.get('api/hello');
-      setData(response.data);
-    } catch (error) {
-      setError(error as Error);
-    } finally {
+      setError(null);
+
+      const response = await fetch(`${host}/api/hello`);
+      if (!response.ok) {
+        throw new Error('Failed to load hello world');
+      }
+
+      const data = await response.text();
+      setData(data);
+      setLoading(false);
+    } catch (e) {
+      setError(e as Error);
       setLoading(false);
     }
   };
 
-  return [{ data, loading, error }, fetchData];
-}
+  const state: HelloWorldState = {
+    data,
+    loading,
+    error,
+  };
 
-export default useHelloWorld;
+  return [state, fetchHelloWorld];
+};
