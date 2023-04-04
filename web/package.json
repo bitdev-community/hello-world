@@ -24,7 +24,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --transformIgnorePatterns 'node_modules/(?!my-library-dir)/'",
+    "test": "react-scripts test --transformIgnorePatterns 'node_modules/(?!node-fetch|fetch-mock-jest)/'",
     "eject": "react-scripts eject",
     "postinstall": "bit import && bit compile && bit link"
   },
