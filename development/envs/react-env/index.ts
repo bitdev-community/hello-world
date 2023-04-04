@@ -1,3 +1,3 @@
-import { ReactEnv } from './react-env.bit-env';
-export { ReactEnv };
-export default ReactEnv;
+import { MyReactEnv } from './react-env.bit-env';
+export { MyReactEnv };
+export default MyReactEnv;

@@ -15,9 +15,24 @@
         "mainFile": "index.ts",
         "rootDir": "development/envs/node-env",
         "config": {
-            "teambit.envs/env": {},
             "teambit.envs/envs": {
                 "env": "teambit.envs/env"
+            },
+            "teambit.envs/env": {},
+            "teambit.compositions/compositions": {},
+            "teambit.docs/docs": {},
+            "teambit.preview/preview": {},
+            "teambit.component/dev-files": {},
+            "teambit.pipelines/builder": {},
+            "teambit.component/forking": {
+                "forkedFrom": {
+                    "scope": "teambit.node",
+                    "name": "node",
+                    "version": "0.0.22"
+                }
+            },
+            "teambit.dependencies/dependency-resolver": {
+                "policy": {}
             }
         }
     },

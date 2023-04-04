@@ -19,9 +19,7 @@ import { Preview } from '@teambit/preview';
 import hostDependencies from './preview/host-dependencies';
 // import { webpackTransformer } from './config/webpack.config';
 
-
-export class ReactEnv extends ReactEnv {
-
+export class MyReactEnv extends ReactEnv {
   /* a shorthand name for the env */
   name = 'react-env';
 
@@ -109,5 +107,4 @@ export class ReactEnv extends ReactEnv {
   }
 }
 
-export default new ReactEnv();
-    
+export default new MyReactEnv();

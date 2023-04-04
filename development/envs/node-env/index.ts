@@ -1,5 +1,4 @@
-import { NodeEnvAspect } from './node-env.aspect';
+import { NodeEnvEnv } from './nodeEnv-env.bit-env';
 
-export type { NodeEnvMain } from './node-env.main.runtime';
-export default NodeEnvAspect;
-export { NodeEnvAspect };
+export { NodeEnvEnv };
+export default NodeEnvEnv;
