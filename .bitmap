@@ -9,50 +9,54 @@
  */
 
 {
-    "envs/node-env": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "development/envs/node-env",
-        "config": {
-            "teambit.envs/envs": {
-                "env": "teambit.envs/env"
-            },
-            "teambit.envs/env": {},
-            "teambit.compositions/compositions": {},
-            "teambit.docs/docs": {},
-            "teambit.preview/preview": {},
-            "teambit.component/dev-files": {},
-            "teambit.pipelines/builder": {},
-            "teambit.component/forking": {
-                "forkedFrom": {
-                    "scope": "teambit.node",
-                    "name": "node",
-                    "version": "0.0.22"
-                }
-            },
-            "teambit.dependencies/dependency-resolver": {
-                "policy": {}
-            }
-        }
-    },
-    "envs/react-env": {
-        "scope": "",
-        "version": "",
-        "mainFile": "index.ts",
-        "rootDir": "development/envs/react-env",
-        "config": {
-            "teambit.envs/envs": {
-                "env": "teambit.envs/env"
-            }
-        }
-    },
-    "ui/button": {
+    "api-routes/hello": {
         "scope": "",
         "version": "",
         "defaultScope": "hello-world",
         "mainFile": "index.ts",
+        "rootDir": "api/src/routes/hello"
+    },
+    "envs/node-env": {
+        "scope": "",
+        "version": "",
+        "defaultScope": "development",
+        "mainFile": "index.ts",
+        "rootDir": "development/envs/node-env"
+    },
+    "envs/react-env": {
+        "scope": "",
+        "version": "",
+        "defaultScope": "development",
+        "mainFile": "index.ts",
+        "rootDir": "development/envs/react-env"
+    },
+    "hooks/use-hello-world": {
+        "scope": "",
+        "version": "",
+        "defaultScope": "hello-world",
+        "mainFile": "index.ts",
+        "rootDir": "web/src/hooks/use-hello-world"
+    },
+    "pages/landing-page": {
+        "scope": "",
+        "version": "",
+        "defaultScope": "hello-world",
+        "mainFile": "index.ts",
+        "rootDir": "web/src/pages/landing-page"
+    },
+    "ui/button": {
+        "scope": "",
+        "version": "",
+        "defaultScope": "design",
+        "mainFile": "index.ts",
         "rootDir": "web/src/ui/button"
+    },
+    "ui/heading": {
+        "scope": "",
+        "version": "",
+        "defaultScope": "design",
+        "mainFile": "index.ts",
+        "rootDir": "web/src/ui/heading"
     },
     "$schema-version": "15.0.0"
 }
