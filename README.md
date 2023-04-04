@@ -76,7 +76,7 @@ greeters.hello-world/api
 greeters.hello-world/api-routes/hello
 ```
 
-**Note**: After doing this, you will get issues with the local dependency paths. Let's ignore it until we `add` all the components into `bit`. You can also delete the `web` and `api` folders.
+**Note**: After doing this, you will get issues with the local dependency paths. Let's ignore it until we `add` all the components into `bit`.
 
 ## Making them Bit Components
 
