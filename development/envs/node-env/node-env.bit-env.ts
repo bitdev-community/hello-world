@@ -93,10 +93,11 @@ export class MyNodeEnv extends NodeEnv {
       packageJson: {
         main: 'dist/{main}.js',
         types: '{main}.ts',
+        type: 'commonjs',
       },
       npmIgnore: super.npmIgnore,
     });
   }
 }
 
-export default new NodeEnv();
+export default new MyNodeEnv();

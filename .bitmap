@@ -13,13 +13,25 @@
         "scope": "greetings.hello-world",
         "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "api-routes/hello"
+        "rootDir": "api-routes/hello",
+        "config": {
+            "greetings.development/envs/node-env": {},
+            "teambit.envs/envs": {
+                "env": "greetings.development/envs/node-env"
+            }
+        }
     },
     "apps/hello-world-api": {
         "scope": "greetings.hello-world",
-        "version": "0.0.5",
+        "version": "0.0.2",
         "mainFile": "index.ts",
-        "rootDir": "apps/hello-world-api"
+        "rootDir": "apps/hello-world-api",
+        "config": {
+            "greetings.development/envs/node-env": {},
+            "teambit.envs/envs": {
+                "env": "greetings.development/envs/node-env"
+            }
+        }
     },
     "apps/hello-world-app": {
         "scope": "greetings.hello-world",
@@ -31,7 +43,13 @@
         "scope": "greetings.development",
         "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "development/deployers/ssh-deployer"
+        "rootDir": "development/deployers/ssh-deployer",
+        "config": {
+            "greetings.development/envs/node-env": {},
+            "teambit.envs/envs": {
+                "env": "greetings.development/envs/node-env"
+            }
+        }
     },
     "envs/node-env": {
         "scope": "greetings.development",
