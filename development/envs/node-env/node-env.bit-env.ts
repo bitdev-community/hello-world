@@ -15,6 +15,7 @@ import { ESLintLinter, EslintTask } from '@teambit/defender.eslint-linter';
 import { JestTask, JestTester } from '@teambit/defender.jest-tester';
 import { PrettierFormatter } from '@teambit/defender.prettier-formatter';
 import { Tester } from '@teambit/tester';
+import { PackageGenerator } from '@teambit/pkg';
 
 export class MyNodeEnv extends NodeEnv {
   /* shorthand name for the environment */
@@ -85,6 +86,16 @@ export class MyNodeEnv extends NodeEnv {
       }),
       JestTask.from({ config: require.resolve('./config/jest.config') }),
     ]);
+  }
+
+  package() {
+    return PackageGenerator.from({
+      packageJson: {
+        main: 'dist/{main}.js',
+        types: '{main}.ts',
+      },
+      npmIgnore: super.npmIgnore,
+    });
   }
 }
 

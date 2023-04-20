@@ -3,5 +3,9 @@
  */
 {
   "extends": "@teambit/react.react-env/config/tsconfig.json",
-  "include": ["**/*", "**/*.json", ".mocharc.js", ".mocharc.js"]
+  "include": ["**/*", "**/*.json", ".mocharc.js", ".mocharc.js"],
+  // compile to CJS
+  "compilerOptions": {
+    "module": "commonjs",
+  }
 }
