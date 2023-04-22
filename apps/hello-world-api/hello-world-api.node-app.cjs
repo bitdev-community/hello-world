@@ -1,11 +1,11 @@
 const { Ssh } = require('@greetings/development.deployers.ssh-deployer');
 
 const config = {
-  host: '13.228.159.236',
-  username: 'bitnami',
+  host: '<domain or ip>',
+  username: '<username>',
   cwd: './api',
-  privateKeyPath: '/Users/ashanfernando/Workspace/lightsail-key.pem',
-  runCommand: "cd api/build && node server.cjs"
+  privateKeyPath: '/Users/my-user/key.pem',
+  runCommand: "cd api && forever stopall && nohup forever server.cjs  &> /dev/null &'"
 };
 
 /** @type {import("@teambit/node").NodeAppOptions} */
