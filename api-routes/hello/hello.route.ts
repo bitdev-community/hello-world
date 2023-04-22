@@ -17,7 +17,7 @@ export interface Route {
 export function getHelloRoute(): Route {
   return {
     method: 'get',
-    route: '/hello',
+    route: '/api/hello',
     middlewares: [async (req, res) => res.send('Hello World!')]
   }
 }

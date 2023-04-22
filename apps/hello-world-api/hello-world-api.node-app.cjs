@@ -1,12 +1,11 @@
 const { Ssh } = require('@greetings/development.deployers.ssh-deployer');
 
 const config = {
-  host: 'xxxx',
-  username: 'xxx',
-  cwd: './',
-  privateKey: '/Users/<my_user>/key.pem',
-  runCommand:
-    'npm install && npm run build --if-present && forever stopall && nohup forever api/index.js  &> /dev/null &',
+  host: '13.228.159.236',
+  username: 'bitnami',
+  cwd: './api',
+  privateKeyPath: '/Users/ashanfernando/Workspace/lightsail-key.pem',
+  runCommand: "cd api/build && node server.cjs"
 };
 
 /** @type {import("@teambit/node").NodeAppOptions} */
