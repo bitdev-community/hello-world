@@ -10,6 +10,8 @@ import {
   resolveTypes,
   TypescriptTask,
 } from '@teambit/typescript.typescript-compiler';
+import { AppTypeList } from '@teambit/application';
+import { NodeAppType } from '@greetings/hello-world.apps.node-app-type';
 import { ESLintLinter, EslintTask } from '@teambit/defender.eslint-linter';
 import { JestTask, JestTester } from '@teambit/defender.jest-tester';
 import { PrettierFormatter } from '@teambit/defender.prettier-formatter';
@@ -19,6 +21,11 @@ import { PackageGenerator } from '@teambit/pkg';
 export class MyNodeEnv extends NodeEnv {
   /* shorthand name for the environment */
   name = 'my-node-env';
+
+  /* register the new app  */
+  apps(): EnvHandler<AppTypeList> {
+    return AppTypeList.from([NodeAppType.from({})]);
+  }
 
   /* the compiler to use during development */
   compiler(): EnvHandler<Compiler> {

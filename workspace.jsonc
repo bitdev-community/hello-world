@@ -51,6 +51,7 @@
         "@teambit/preview.react-preview": "^0.0.28",
         "@teambit/react.mounter": "^0.0.8",
         "@teambit/react.react-env": "^0.0.50",
+        "@teambit/toolbox.network.get-port": "^0.0.121",
         "@teambit/typescript.typescript-compiler": "^0.0.7",
         "@testing-library/jest-dom": "^5.16.5",
         "@testing-library/react": "^14.0.0",

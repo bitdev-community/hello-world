@@ -27,6 +27,12 @@
         "mainFile": "index.ts",
         "rootDir": "apps/hello-world-app"
     },
+    "apps/node-app-type": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "apps/app-types/node-app-type"
+    },
     "deployers/ssh-deployer": {
         "scope": "greetings.development",
         "version": "0.0.9",

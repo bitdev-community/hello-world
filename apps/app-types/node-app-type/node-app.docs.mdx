@@ -1,0 +1,26 @@
+---
+description: A demo app-type component
+labels: ['aspect', 'app', 'node', 'customize']
+---
+
+This is a demo application type.
+
+- See the [.application.ts](https://bit.cloud/learnbit/apps/custom-app-type/node-app-type/~code/node-app-type.application.ts) file to learn how to implement the app-type's core functionality (`bit run APP_NAME` and `bit build APP_COMPONENT_ID`).
+- See the [.app-type.ts](https://bit.cloud/learnbit/apps/custom-app-type/node-app-type/~code/node-app-type.app-type.ts) file to learn how to define the properties configurable by this app-type's plugin file.
+- See the [.main.runtime.ts](https://bit.cloud/learnbit/apps/custom-app-type/node-app-type/~code/node-app-type.main.runtime.ts) file to learn how to register an app-type and define its plugin file extension.
+
+This app type does not implement its own deploy function. To learn how to implement your own deployer or to use an existing one, see ['App deployment'](https://bit.dev/docs/apps/app-deployment).
+
+Run the following to import this app-type and configure it on your workspace:
+
+```bash
+bit import learnbit.apps/custom-app-type/node-app-type
+bit use learnbit.apps/custom-app-type/node-app-type
+```
+
+Run the following to run a demo app that uses this app-type:
+
+```bash
+bit import learnbit.app/custom-app-type/my-app
+bit use learnbit.app/custom-app-type/my-app
+```
