@@ -3,7 +3,6 @@
  * @see https://bit.cloud/teambit/node/node
  */
 import { NodeEnv } from '@teambit/node.node';
-
 import { Compiler } from '@teambit/compiler';
 import { EnvHandler } from '@teambit/envs';
 import {
@@ -100,4 +99,4 @@ export class MyNodeEnv extends NodeEnv {
   }
 }
 
-export default new NodeEnv();
+export default new MyNodeEnv();
