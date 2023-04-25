@@ -43,14 +43,14 @@ export class NodeApp implements Application {
     const mainFile = join(distDir, base);
     const buildPath = `${capsule.path}${sep}${artifactsDir}${sep}node-app${sep}${this.bundleName}`
 
-    /*await esbuild.build({
+    await esbuild.build({
       entryPoints: [mainFile],
       bundle: true,
       platform: 'node',
       outfile: buildPath,
     }).catch((error) => {
       logger.consoleFailure(`node app bundling failed with the following error: ${error}`);
-    });*/
+    });
     const _context = Object.assign(context, { mainFile, buildPath, logger });
     return _context;
   }
