@@ -74,7 +74,8 @@
         "webpack": "5.51.1"
       }
     },
-    "linkCoreAspects": true
+    "linkCoreAspects": true,
+    "rootComponents": true
   },
   "teambit.generator/generator": {
     "envs": [

@@ -31,7 +31,13 @@
         "scope": "greetings.development",
         "version": "0.0.9",
         "mainFile": "index.ts",
-        "rootDir": "development/deployers/ssh-deployer"
+        "rootDir": "development/deployers/ssh-deployer",
+        "config": {
+            "greetings.development/envs/node-env": {},
+            "teambit.envs/envs": {
+                "env": "greetings.development/envs/node-env"
+            }
+        }
     },
     "envs/node-env": {
         "scope": "greetings.development",
