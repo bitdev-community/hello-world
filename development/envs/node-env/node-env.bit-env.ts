@@ -38,42 +38,6 @@ export class MyNodeEnv extends NodeEnv {
     });
   }
 
-  /* the test runner to use during development */
-  tester(): EnvHandler<Tester> {
-    /**
-     * @see https://bit.dev/reference/jest/using-jest
-     */
-    return JestTester.from({
-      config: require.resolve('./config/jest.config'),
-    });
-  }
-
-  /* the linter to use during development */
-  linter() {
-    /**
-     * @see https://bit.dev/reference/eslint/using-eslint
-     */
-    return ESLintLinter.from({
-      tsconfig: require.resolve('./config/tsconfig.json'),
-      configPath: require.resolve('./config/eslintrc.js'),
-      pluginsPath: __dirname,
-      extensions: ['.ts', '.tsx', '.js', '.jsx', '.mjs'],
-    });
-  }
-
-  /**
-   * the formatter to use during development
-   * (source files are not formatted as part of the components' build)
-   */
-  formatter() {
-    /**
-     * @see https://bit.dev/reference/prettier/using-prettier
-     */
-    return PrettierFormatter.from({
-      configPath: require.resolve('./config/prettier.config.js'),
-    });
-  }
-
   /**
    * a set of processes to be performed before a component is snapped, during its build phase
    * @see https://bit.dev/docs/node-env/build-pipelines
@@ -84,13 +48,6 @@ export class MyNodeEnv extends NodeEnv {
         tsconfig: require.resolve('./config/tsconfig.json'),
         types: resolveTypes(__dirname, ['./types']),
       }),
-      EslintTask.from({
-        tsconfig: require.resolve('./config/tsconfig.json'),
-        configPath: require.resolve('./config/eslintrc.js'),
-        pluginsPath: __dirname,
-        extensions: ['.ts', '.tsx', '.js', '.jsx', '.mjs'],
-      }),
-      JestTask.from({ config: require.resolve('./config/jest.config') }),
     ]);
   }
 

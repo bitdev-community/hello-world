@@ -76,7 +76,8 @@
       }
     },
     "linkCoreAspects": true,
-    "rootComponents": true
+    "rootComponents": true,
+    "nodeLinker": "hoisted"
   },
   "teambit.generator/generator": {
     "envs": [
