@@ -11,13 +11,13 @@
 {
     "api-routes/hello": {
         "scope": "greetings.hello-world",
-        "version": "0.0.4",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "api-routes/hello"
     },
     "apps/hello-world-api": {
         "scope": "greetings.hello-world",
-        "version": "0.0.15",
+        "version": "0.0.11",
         "mainFile": "index.ts",
         "rootDir": "apps/hello-world-api"
     },
@@ -35,7 +35,7 @@
     },
     "deployers/ssh-deployer": {
         "scope": "greetings.development",
-        "version": "0.0.9",
+        "version": "0.0.5",
         "mainFile": "index.ts",
         "rootDir": "development/deployers/ssh-deployer",
         "config": {
@@ -47,7 +47,7 @@
     },
     "envs/node-env": {
         "scope": "greetings.development",
-        "version": "0.0.4",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "development/envs/node-env"
     },
