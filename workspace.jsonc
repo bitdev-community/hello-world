@@ -47,7 +47,7 @@
         "@teambit/defender.prettier-formatter": "^0.0.5",
         "@teambit/dependencies.modules.packages-excluder": "^0.0.70",
         "@teambit/mdx.ui.mdx-scope-context": "^0.0.498",
-        "@teambit/node.node": "^0.0.22",
+        "@teambit/node.node": "^0.0.28",
         "@teambit/preview.react-preview": "^0.0.28",
         "@teambit/react.mounter": "^0.0.8",
         "@teambit/react.react-env": "^0.0.50",
