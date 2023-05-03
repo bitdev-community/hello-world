@@ -231,31 +231,22 @@ importers:
 
   development/deployers/ssh-deployer:
     dependencies:
-      '@mdx-js/react':
-        specifier: 1.6.22
-        version: registry.npmjs.org/@mdx-js/react@1.6.22(react@18.2.0)
-      '@teambit/mdx.ui.mdx-scope-context':
-        specifier: 0.0.496
-        version: registry.npmjs.org/@teambit/mdx.ui.mdx-scope-context@0.0.496(react-dom@18.2.0)(react@18.2.0)
       esbuild:
         specifier: ^0.17.17
         version: registry.npmjs.org/esbuild@0.17.18
       node-ssh:
         specifier: ^13.1.0
         version: registry.npmjs.org/node-ssh@13.1.0
-      react:
-        specifier: ^18.0.0
-        version: registry.npmjs.org/react@18.2.0
-      react-dom:
-        specifier: ^18.0.0
-        version: registry.npmjs.org/react-dom@18.2.0(react@18.2.0)
     devDependencies:
+      '@babel/runtime':
+        specifier: 7.20.0
+        version: registry.npmjs.org/@babel/runtime@7.20.0
       '@types/jest':
-        specifier: ^29.2.2
-        version: registry.npmjs.org/@types/jest@29.5.1
+        specifier: 26.0.20
+        version: registry.npmjs.org/@types/jest@26.0.20
       '@types/node':
-        specifier: ^16.18.11
-        version: registry.npmjs.org/@types/node@16.18.25
+        specifier: 12.20.4
+        version: registry.npmjs.org/@types/node@12.20.4
 
   development/envs/node-env:
     dependencies:
@@ -265,24 +256,12 @@ importers:
       '@mdx-js/react':
         specifier: 1.6.22
         version: registry.npmjs.org/@mdx-js/react@1.6.22(react@18.2.0)
-      '@teambit/defender.eslint-linter':
-        specifier: ^0.0.8
-        version: 0.0.8
-      '@teambit/defender.jest-tester':
-        specifier: ^0.0.8
-        version: 0.0.8(@types/node@12.20.4)
-      '@teambit/defender.prettier-formatter':
-        specifier: ^0.0.5
-        version: 0.0.5
       '@teambit/mdx.ui.mdx-scope-context':
         specifier: 0.0.496
         version: registry.npmjs.org/@teambit/mdx.ui.mdx-scope-context@0.0.496(react-dom@18.2.0)(react@18.2.0)
       '@teambit/node.node':
         specifier: ^0.0.28
         version: 0.0.28(@testing-library/react@13.4.0)(@types/node@12.20.4)(@types/react@17.0.58)(esbuild@0.17.18)(graphql@14.7.0)
-      '@teambit/typescript.typescript-compiler':
-        specifier: ^0.0.7
-        version: 0.0.7
       core-js:
         specifier: ^3.0.0
         version: registry.npmjs.org/core-js@3.30.1
