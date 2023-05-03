@@ -389,7 +389,7 @@ importers:
         specifier: ^18.0.0
         version: registry.npmjs.org/@types/react-dom@18.2.1
 
-  node_modules/.bit_roots/greetings.development_envs_node-env@0.0.2:
+  node_modules/.bit_roots/greetings.development_envs_node-env@0.0.3:
     dependencies:
       '@greetings/design.ui.button':
         specifier: workspace:*
@@ -540,7 +540,7 @@ importers:
       '@greetings/hello-world.pages.landing-page':
         injected: true
 
-  node_modules/.bit_roots/greetings.hello-world_apps_hello-world-api@0.0.11:
+  node_modules/.bit_roots/greetings.hello-world_apps_hello-world-api@0.0.12:
     dependencies:
       '@greetings/design.ui.button':
         specifier: workspace:*
@@ -624,7 +624,7 @@ importers:
       '@greetings/hello-world.pages.landing-page':
         injected: true
 
-  node_modules/.bit_roots/greetings.hello-world_apps_hello-world-app@0.0.2:
+  node_modules/.bit_roots/greetings.hello-world_apps_hello-world-app@0.0.3:
     dependencies:
       '@greetings/design.ui.button':
         specifier: workspace:*
@@ -667,7 +667,7 @@ importers:
         version: 0.1.17(react@18.2.0)
       '@teambit/mdx.ui.mdx-scope-context':
         specifier: 0.0.496
-        version: registry.npmjs.org/@teambit/mdx.ui.mdx-scope-context@0.0.496(react-dom@18.2.0)(react@18.2.0)
+        version: 0.0.496(react-dom@18.2.0)(react@18.2.0)
       '@teambit/react.react-env':
         specifier: ^0.0.50
         version: 0.0.50(@testing-library/react@13.4.0)(@types/node@12.20.4)(@types/react@18.2.0)(esbuild@0.17.18)
@@ -4734,7 +4734,7 @@ packages:
   file:api-routes/hello:
     resolution: {directory: api-routes/hello, type: directory}
     name: '@greetings/hello-world.api-routes.hello'
-    version: 0.0.2
+    version: 0.0.3
     dependencies:
       express: registry.npmjs.org/express@4.18.2
     transitivePeerDependencies:
@@ -4744,7 +4744,7 @@ packages:
   file:apps/app-types/node-app-type:
     resolution: {directory: apps/app-types/node-app-type, type: directory}
     name: '@greetings/hello-world.apps.node-app-type'
-    version: 0.0.1-new
+    version: 0.0.1
     dependencies:
       '@teambit/toolbox.network.get-port': 0.0.121
       esbuild: registry.npmjs.org/esbuild@0.17.18
@@ -4753,7 +4753,7 @@ packages:
   file:apps/hello-world-api:
     resolution: {directory: apps/hello-world-api, type: directory}
     name: '@greetings/hello-world.apps.hello-world-api'
-    version: 0.0.11
+    version: 0.0.12
     dependencies:
       cors: registry.npmjs.org/cors@2.8.5
       express: registry.npmjs.org/express@4.18.2
@@ -4765,7 +4765,7 @@ packages:
     resolution: {directory: apps/hello-world-app, type: directory}
     id: file:apps/hello-world-app
     name: '@greetings/hello-world.apps.hello-world-app'
-    version: 0.0.2
+    version: 0.0.3
     peerDependencies:
       react: '*'
       react-dom: '*'
@@ -4789,7 +4789,7 @@ packages:
   file:development/deployers/ssh-deployer:
     resolution: {directory: development/deployers/ssh-deployer, type: directory}
     name: '@greetings/development.deployers.ssh-deployer'
-    version: 0.0.5
+    version: 0.0.6
     dependencies:
       esbuild: registry.npmjs.org/esbuild@0.17.18
       node-ssh: registry.npmjs.org/node-ssh@13.1.0
@@ -4799,7 +4799,7 @@ packages:
     resolution: {directory: development/envs/node-env, type: directory}
     id: file:development/envs/node-env
     name: '@greetings/development.envs.node-env'
-    version: 0.0.2
+    version: 0.0.3
     dependencies:
       '@babel/runtime': registry.npmjs.org/@babel/runtime@7.20.0
       '@mdx-js/react': registry.npmjs.org/@mdx-js/react@1.6.22(react@18.2.0)
@@ -4859,7 +4859,7 @@ packages:
     resolution: {directory: development/envs/node-env, type: directory}
     id: file:development/envs/node-env
     name: '@greetings/development.envs.node-env'
-    version: 0.0.2
+    version: 0.0.3
     dependencies:
       '@babel/runtime': registry.npmjs.org/@babel/runtime@7.20.0
       '@mdx-js/react': registry.npmjs.org/@mdx-js/react@1.6.22(react@18.2.0)
