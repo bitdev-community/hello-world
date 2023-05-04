@@ -32,16 +32,16 @@ export class NodeApp implements Application {
       logger.console(data.toString());
     });
     return port;
-  }x
+  };
 
   async build(context: AppBuildContext): Promise<DeployContext> {
     const logger = this.logger;
     const { base } = parse(this.entry);
     const { distDir } = context.env.getCompiler();
-    const  { capsule } = context;
+    const  capsulePath = context.capsule.path
     const artifactsDir  = context.artifactsDir;
-    const mainFile = join(distDir, base);
-    const buildPath = `${capsule.path}${sep}${artifactsDir}${sep}node-app${sep}${this.bundleName}`
+    const mainFile = join(capsulePath, distDir, base);
+    const buildPath = `${capsulePath}${sep}${artifactsDir}${sep}node-app${sep}${this.bundleName}`;
 
     await esbuild.build({
       entryPoints: [mainFile],

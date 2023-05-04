@@ -8,7 +8,7 @@ const config = {
   runCommand: "cd api && forever stopall && nohup forever server.cjs  &> /dev/null &'"
 };
 
-/** @type {import("@teambit/node").NodeAppOptions} */
+/** @type {import("@greetings/hello-world.apps.node-app-type").NodeAppOptions} */
 module.exports.default = {
   name: 'hello-world-api',
   entry: require.resolve('./hello-world-api.app-root'),
