@@ -1,7 +1,7 @@
 const { Ssh } = require('@greetings/development.deployers.ssh-deployer');
 
 const config = {
-  host: process.env.SSH_SERVER_IP,
+  host: process.env.SSH_SERVER_HOST_IP,
   username: process.env.SSH_SERVER_USERNAME,
   cwd: './api',
   privateKeyPath: process.env.SSH_PRIVATE_KEY_PATH,

@@ -41,7 +41,7 @@
       "dependencies": {
         "@babel/runtime": "^7.21.0",
         "@mdx-js/react": "^2.3.0",
-        "@teambit/cloud-providers.deployers.netlify": "^0.1.17",
+        "@teambit/cloud-providers.deployers.netlify": "^0.1.19",
         "@teambit/defender.eslint-linter": "^0.0.8",
         "@teambit/defender.jest-tester": "^0.0.8",
         "@teambit/defender.prettier-formatter": "^0.0.5",
@@ -103,6 +103,6 @@
       // "teambit.react/react": { }
     }
   },
-  "greetings.hello-world/apps/hello-world-app": {},
+  //"greetings.hello-world/apps/hello-world-app": {},
   "greetings.hello-world/apps/hello-world-api": {}
 }

@@ -5,7 +5,7 @@
 import { NodeEnv } from '@teambit/node.node';
 import { EnvHandler } from '@teambit/envs';
 import { AppTypeList } from '@teambit/application';
-import { NodeAppType } from '@greetings/hello-world.apps.node-app-type';
+import { NodeAppType } from '@greetings/development.app-types.node-app-type';
 
 export class MyNodeEnv extends NodeEnv {
   /* shorthand name for the environment */

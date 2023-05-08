@@ -11,37 +11,37 @@
 {
     "api-routes/hello": {
         "scope": "greetings.hello-world",
-        "version": "0.0.6",
+        "version": "0.0.7",
         "mainFile": "index.ts",
         "rootDir": "api-routes/hello"
     },
+    "app-types/node-app-type": {
+        "scope": "greetings.development",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "development/app-types/node-app-type"
+    },
     "apps/hello-world-api": {
         "scope": "greetings.hello-world",
-        "version": "0.0.15",
+        "version": "0.0.16",
         "mainFile": "index.ts",
         "rootDir": "apps/hello-world-api"
     },
     "apps/hello-world-app": {
         "scope": "greetings.hello-world",
-        "version": "0.0.4",
+        "version": "0.0.5",
         "mainFile": "index.ts",
         "rootDir": "apps/hello-world-app"
     },
-    "apps/node-app-type": {
-        "scope": "greetings.hello-world",
-        "version": "0.0.4",
-        "mainFile": "index.ts",
-        "rootDir": "apps/app-types/node-app-type"
-    },
     "deployers/ssh-deployer": {
         "scope": "greetings.development",
-        "version": "0.0.9",
+        "version": "0.0.10",
         "mainFile": "index.ts",
         "rootDir": "development/deployers/ssh-deployer"
     },
     "envs/node-env": {
         "scope": "greetings.development",
-        "version": "0.0.6",
+        "version": "0.0.7",
         "mainFile": "index.ts",
         "rootDir": "development/envs/node-env"
     },

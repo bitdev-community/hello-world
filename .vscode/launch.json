@@ -17,7 +17,8 @@
       "console": "integratedTerminal",
       "sourceMaps": true,
       "internalConsoleOptions": "neverOpen",
-      "cwd": "${workspaceFolder}"
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "/Users/ashanfernando/.nvm/versions/node/v16.20.0/bin/node"
     }
   ],
   "inputs": [
