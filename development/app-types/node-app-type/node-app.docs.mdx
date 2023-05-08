@@ -1,0 +1,29 @@
+---
+description: A demo app-type component for Node.js
+labels: ['aspect', 'app', 'node', 'customize']
+---
+
+# What's included
+
+- See the [node-app.application.ts](https://bit.cloud/greetings/app-types/node-app-type/~code/node-app.application.ts) file to learn how to implement the app-type's core functionality.
+- See the [node-app.app-type.ts](https://bit.cloud/greetings/app-types/node-app-type/~code/node-app.app-type.ts) file to learn how to define the properties configurable by this app-type's plugin file.
+- See the [node-app-options.ts](https://bit.cloud/greetings/app-types/node-app-type/~code/node-app-optinos.ts) file to learn how to register an app-type and define its plugin file extension.
+
+This app type does not implement its own deploy function. 
+To learn how to implement your own deployer or to use an existing one, see ['App deployment'](https://bit.dev/docs/apps/app-deployment).
+
+# Adding the app type to your workspace
+Run the following to import this app-type to your workspace
+
+```bash
+bit import greetings.hello-world/app-types/node-app-type 
+bit use greetings.hello-world/app-types/node-app-type
+```
+
+or install it using `bit install`
+# Use it in your Env
+
+
+# Use the app-type in the application file extension
+When creating an app using the app type you need to follow the following convension.
+
