@@ -1,6 +1,6 @@
 import { AppDeployContext } from '@teambit/application';
 import { NodeSSH } from 'node-ssh';
-import { build } from "esbuild";
+import path from 'path';
 
 export type SshOptions = {
   host: string;
@@ -32,21 +32,14 @@ export class Ssh {
 
     const ssh = await this.sshClient;
     const remotePath = this.options.cwd;
-    const entryPoint = this.options.entryPoint ?? 'index.ts';
+    const buildOutput = context['buildPath'];
+    const localDirectory = path.dirname(buildOutput);
 
     await ssh.execCommand(
       `sudo mkdir ${remotePath} && sudo chown $USER ${remotePath}`
     );
 
-    await build({
-      entryPoints: [capsule.fs.getPath(entryPoint)],
-      outfile: `${capsule.fs.getPath('/')}build/server.cjs`,
-      bundle: true,
-      minify: true,
-      platform: 'node'
-    });
-
-    await ssh.putDirectory(capsule.fs.getPath('build'), remotePath, {
+    await ssh.putDirectory(localDirectory, remotePath, {
       recursive: true,
       concurrency: 10,
     });
