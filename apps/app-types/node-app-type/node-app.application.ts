@@ -15,7 +15,7 @@ export class NodeApp implements Application {
     readonly logger: Logger,
     readonly bundleName: string,
     readonly deploy?: DeployFn
-  ) {}
+  ) { }
 
   applicationType = 'node';
 
@@ -38,11 +38,10 @@ export class NodeApp implements Application {
     const logger = this.logger;
     const { base } = parse(this.entry);
     const { distDir } = context.env.getCompiler();
-    const  capsulePath = context.capsule.path
-    const artifactsDir  = context.artifactsDir;
+    const capsulePath = context.capsule.path
+    const artifactsDir = context.artifactsDir;
     const mainFile = join(capsulePath, distDir, base);
-    const buildPath = `${capsulePath}${sep}${artifactsDir}${sep}node-app${sep}${this.bundleName}`;
-
+    const buildPath = `${capsulePath}${sep}${artifactsDir}${sep}${this.bundleName}`;
     await esbuild.build({
       entryPoints: [mainFile],
       bundle: true,

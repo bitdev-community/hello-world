@@ -20,7 +20,7 @@ export class NodeAppType implements ApplicationType<NodeAppOptions> {
       options.entry,
       options.portRange || [3000, 4000],
       this.logger,
-      options.bundleName || 'app.js',
+      options.bundleName || 'app.cjs',
       options.deploy,
     );
   }

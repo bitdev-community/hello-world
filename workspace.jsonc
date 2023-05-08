@@ -102,7 +102,7 @@
        **/
       // "teambit.react/react": { }
     }
-  }
-  // "greetings.hello-world/apps/hello-world-app": {},
-  // "greetings.hello-world/apps/hello-world-api": {}
+  },
+  "greetings.hello-world/apps/hello-world-app": {},
+  "greetings.hello-world/apps/hello-world-api": {}
 }
