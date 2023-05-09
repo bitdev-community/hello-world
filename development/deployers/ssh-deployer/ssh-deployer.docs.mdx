@@ -1,0 +1,42 @@
+# Adding SSH Deployer to the Workspace
+
+You can either install or import the SSH deployer into your workspace.
+
+Install
+```
+bit install @greetings/development.deployers.ssh-deployer
+```
+or Import
+```
+bit import greetings.development/deployers/ssh-deployer
+```
+
+## Using it for Deployment
+Then in your node app, configure the deployer as follows.
+
+```
+const { Ssh } = require('@greetings/development.deployers.ssh-deployer');
+
+const config = {
+  host: process.env.SSH_SERVER_HOST_IP,
+  username: process.env.SSH_SERVER_USERNAME,
+  cwd: './api',
+  privateKeyPath: process.env.SSH_PRIVATE_KEY_PATH,
+  entryPoint: process.env.APP_BUNDLE_DIRECTORY, // Optional: If not specified, it expects the variable, `buildPath` from `DeployContext`
+  runCommand: "cd api && forever stopall && nohup forever app.cjs  &> /dev/null &'"
+};
+
+/** @type {import("@greetings/hello-world.apps.node-app-type").NodeAppOptions} */
+module.exports.default = {
+  name: 'hello-world-api',
+  entry: require.resolve('./hello-world-api.app-root'),
+  deploy: Ssh.deploy(config),
+  portRange: [3000, 4000],
+};
+```
+
+**Note:** The run command may change depending on your server configurations.
+
+For more information about using a custom node app type that exposes `buildPath` parameter, refer the below examples.
+1. [Node-App-Type:](https://bit.cloud/greetings/development/app-types/node-app-type) An app type exposing `buildPath` to the DeployContext.
+2. [Node-App-Using-SSH-Deployer:](https://bit.cloud/greetings/hello-world/apps/hello-world-api) An app that using ssh deployer.

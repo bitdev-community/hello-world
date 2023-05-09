@@ -33,7 +33,7 @@ export class Ssh {
     const ssh = await this.sshClient;
     const remotePath = this.options.cwd;
     const buildOutput = context['buildPath'];
-    const localDirectory = path.dirname(buildOutput);
+    const localDirectory = this.options.entryPoint ?? path.dirname(buildOutput);
 
     await ssh.execCommand(
       `sudo mkdir ${remotePath} && sudo chown $USER ${remotePath}`

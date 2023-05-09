@@ -22,8 +22,33 @@ bit use greetings.hello-world/app-types/node-app-type
 
 or install it using `bit install`
 # Use it in your Env
+You need to register the new app type inside your Env.
+
+```
+import { NodeAppType } from '@greetings/development.app-types.node-app-type';
+
+export class MyNodeEnv extends NodeEnv {
+  /* shorthand name for the environment */
+  name = 'my-node-env';
+
+  /* register the new app  */
+  apps(): EnvHandler<AppTypeList> {
+    return AppTypeList.from([NodeAppType.from({})]);
+  }
+}
+```
+[Here](https://bit.cloud/greetings/development/envs/node-env/~code/node-env.bit-env.ts) is an example of defining the app type in an Env.
 
 
 # Use the app-type in the application file extension
 When creating an app using the app type you need to follow the following convension.
+
+```
+hello-world-api.node-bundled-app.cjs
+```
+**Note:** The application uses `node-bundled-app`
+
+[Here](https://bit.cloud/greetings/hello-world/apps/hello-world-api/~code/hello-world-api.node-bundled-app.cjs) is an example of using the app type.
+
+
 

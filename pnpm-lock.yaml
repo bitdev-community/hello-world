@@ -352,25 +352,6 @@ importers:
         specifier: 5.9.5
         version: registry.npmjs.org/@types/testing-library__jest-dom@5.9.5
 
-  hello-world/apps/node-app-type:
-    dependencies:
-      '@teambit/toolbox.network.get-port':
-        specifier: ^0.0.121
-        version: registry.npmjs.org/@teambit/toolbox.network.get-port@0.0.121
-      esbuild:
-        specifier: ^0.17.17
-        version: registry.npmjs.org/esbuild@0.17.18
-    devDependencies:
-      '@babel/runtime':
-        specifier: 7.20.0
-        version: registry.npmjs.org/@babel/runtime@7.20.0
-      '@types/jest':
-        specifier: 26.0.20
-        version: registry.npmjs.org/@types/jest@26.0.20
-      '@types/node':
-        specifier: 12.20.4
-        version: registry.npmjs.org/@types/node@12.20.4
-
   hooks/use-hello-world:
     dependencies:
       '@mdx-js/react':
@@ -405,7 +386,7 @@ importers:
         specifier: ^18.0.0
         version: registry.npmjs.org/@types/react-dom@18.2.1
 
-  node_modules/.bit_roots/greetings.development_envs_node-env@0.0.7:
+  node_modules/.bit_roots/greetings.development_envs_node-env@0.0.8:
     dependencies:
       '@greetings/design.ui.button':
         specifier: workspace:*
@@ -434,9 +415,6 @@ importers:
       '@greetings/hello-world.apps.hello-world-app':
         specifier: workspace:*
         version: file:apps/hello-world-app(react-dom@18.2.0)(react-router-dom@6.8.1)(react@18.2.0)
-      '@greetings/hello-world.apps.node-app-type':
-        specifier: workspace:*
-        version: file:hello-world/apps/node-app-type
       '@greetings/hello-world.hooks.use-hello-world':
         specifier: workspace:*
         version: file:hooks/use-hello-world(react@18.2.0)
@@ -473,8 +451,6 @@ importers:
       '@greetings/hello-world.apps.hello-world-api':
         injected: true
       '@greetings/hello-world.apps.hello-world-app':
-        injected: true
-      '@greetings/hello-world.apps.node-app-type':
         injected: true
       '@greetings/hello-world.hooks.use-hello-world':
         injected: true
@@ -510,9 +486,6 @@ importers:
       '@greetings/hello-world.apps.hello-world-app':
         specifier: workspace:*
         version: file:apps/hello-world-app(react-dom@18.2.0)(react-router-dom@6.8.1)(react@18.2.0)
-      '@greetings/hello-world.apps.node-app-type':
-        specifier: workspace:*
-        version: file:hello-world/apps/node-app-type
       '@greetings/hello-world.hooks.use-hello-world':
         specifier: workspace:*
         version: file:hooks/use-hello-world(react@18.2.0)
@@ -559,14 +532,12 @@ importers:
         injected: true
       '@greetings/hello-world.apps.hello-world-app':
         injected: true
-      '@greetings/hello-world.apps.node-app-type':
-        injected: true
       '@greetings/hello-world.hooks.use-hello-world':
         injected: true
       '@greetings/hello-world.pages.landing-page':
         injected: true
 
-  node_modules/.bit_roots/greetings.hello-world_apps_hello-world-api@0.0.16:
+  node_modules/.bit_roots/greetings.hello-world_apps_hello-world-api@0.0.17:
     dependencies:
       '@greetings/design.ui.button':
         specifier: workspace:*
@@ -595,9 +566,6 @@ importers:
       '@greetings/hello-world.apps.hello-world-app':
         specifier: workspace:*
         version: file:apps/hello-world-app(react-dom@18.2.0)(react-router-dom@6.8.1)(react@18.2.0)
-      '@greetings/hello-world.apps.node-app-type':
-        specifier: workspace:*
-        version: file:hello-world/apps/node-app-type
       '@greetings/hello-world.hooks.use-hello-world':
         specifier: workspace:*
         version: file:hooks/use-hello-world(react@18.2.0)
@@ -648,8 +616,6 @@ importers:
         injected: true
       '@greetings/hello-world.apps.hello-world-app':
         injected: true
-      '@greetings/hello-world.apps.node-app-type':
-        injected: true
       '@greetings/hello-world.hooks.use-hello-world':
         injected: true
       '@greetings/hello-world.pages.landing-page':
@@ -684,9 +650,6 @@ importers:
       '@greetings/hello-world.apps.hello-world-app':
         specifier: workspace:*
         version: file:apps/hello-world-app(react-dom@18.2.0)(react-router-dom@6.8.1)(react@18.2.0)
-      '@greetings/hello-world.apps.node-app-type':
-        specifier: workspace:*
-        version: file:hello-world/apps/node-app-type
       '@greetings/hello-world.hooks.use-hello-world':
         specifier: workspace:*
         version: file:hooks/use-hello-world(react@18.2.0)
@@ -746,8 +709,6 @@ importers:
         injected: true
       '@greetings/hello-world.apps.hello-world-app':
         injected: true
-      '@greetings/hello-world.apps.node-app-type':
-        injected: true
       '@greetings/hello-world.hooks.use-hello-world':
         injected: true
       '@greetings/hello-world.pages.landing-page':
@@ -782,9 +743,6 @@ importers:
       '@greetings/hello-world.apps.hello-world-app':
         specifier: workspace:*
         version: file:apps/hello-world-app(react-dom@18.2.0)(react-router-dom@6.8.1)(react@18.2.0)
-      '@greetings/hello-world.apps.node-app-type':
-        specifier: workspace:*
-        version: file:hello-world/apps/node-app-type
       '@greetings/hello-world.hooks.use-hello-world':
         specifier: workspace:*
         version: file:hooks/use-hello-world(react@18.2.0)
@@ -809,8 +767,6 @@ importers:
       '@greetings/hello-world.apps.hello-world-api':
         injected: true
       '@greetings/hello-world.apps.hello-world-app':
-        injected: true
-      '@greetings/hello-world.apps.node-app-type':
         injected: true
       '@greetings/hello-world.hooks.use-hello-world':
         injected: true
@@ -846,9 +802,6 @@ importers:
       '@greetings/hello-world.apps.hello-world-app':
         specifier: workspace:*
         version: file:apps/hello-world-app(react-dom@18.2.0)(react-router-dom@6.8.1)(react@18.2.0)
-      '@greetings/hello-world.apps.node-app-type':
-        specifier: workspace:*
-        version: file:hello-world/apps/node-app-type
       '@greetings/hello-world.hooks.use-hello-world':
         specifier: workspace:*
         version: file:hooks/use-hello-world(react@18.2.0)
@@ -873,8 +826,6 @@ importers:
       '@greetings/hello-world.apps.hello-world-api':
         injected: true
       '@greetings/hello-world.apps.hello-world-app':
-        injected: true
-      '@greetings/hello-world.apps.node-app-type':
         injected: true
       '@greetings/hello-world.hooks.use-hello-world':
         injected: true
@@ -4775,7 +4726,7 @@ packages:
   file:api-routes/hello:
     resolution: {directory: api-routes/hello, type: directory}
     name: '@greetings/hello-world.api-routes.hello'
-    version: 0.0.7
+    version: 0.0.8
     dependencies:
       express: registry.npmjs.org/express@4.18.2
     transitivePeerDependencies:
@@ -4785,7 +4736,7 @@ packages:
   file:apps/hello-world-api:
     resolution: {directory: apps/hello-world-api, type: directory}
     name: '@greetings/hello-world.apps.hello-world-api'
-    version: 0.0.16
+    version: 0.0.17
     dependencies:
       cors: registry.npmjs.org/cors@2.8.5
       express: registry.npmjs.org/express@4.18.2
@@ -4821,7 +4772,7 @@ packages:
   file:development/app-types/node-app-type:
     resolution: {directory: development/app-types/node-app-type, type: directory}
     name: '@greetings/development.app-types.node-app-type'
-    version: 0.0.1
+    version: 0.0.2
     dependencies:
       '@teambit/toolbox.network.get-port': registry.npmjs.org/@teambit/toolbox.network.get-port@0.0.121
       esbuild: registry.npmjs.org/esbuild@0.17.18
@@ -4830,7 +4781,7 @@ packages:
   file:development/deployers/ssh-deployer:
     resolution: {directory: development/deployers/ssh-deployer, type: directory}
     name: '@greetings/development.deployers.ssh-deployer'
-    version: 0.0.10
+    version: 0.0.11
     dependencies:
       esbuild: registry.npmjs.org/esbuild@0.17.18
       node-ssh: registry.npmjs.org/node-ssh@13.1.0
@@ -4840,7 +4791,7 @@ packages:
     resolution: {directory: development/envs/node-env, type: directory}
     id: file:development/envs/node-env
     name: '@greetings/development.envs.node-env'
-    version: 0.0.7
+    version: 0.0.8
     dependencies:
       '@babel/runtime': registry.npmjs.org/@babel/runtime@7.20.0
       '@mdx-js/react': registry.npmjs.org/@mdx-js/react@1.6.22(react@18.2.0)
@@ -4896,7 +4847,7 @@ packages:
     resolution: {directory: development/envs/node-env, type: directory}
     id: file:development/envs/node-env
     name: '@greetings/development.envs.node-env'
-    version: 0.0.7
+    version: 0.0.8
     dependencies:
       '@babel/runtime': registry.npmjs.org/@babel/runtime@7.20.0
       '@mdx-js/react': registry.npmjs.org/@mdx-js/react@1.6.22(react@18.2.0)
@@ -5072,15 +5023,6 @@ packages:
       - webpack-dev-server
       - webpack-hot-middleware
       - webpack-plugin-serve
-    dev: false
-
-  file:hello-world/apps/node-app-type:
-    resolution: {directory: hello-world/apps/node-app-type, type: directory}
-    name: '@greetings/hello-world.apps.node-app-type'
-    version: 0.0.4
-    dependencies:
-      '@teambit/toolbox.network.get-port': registry.npmjs.org/@teambit/toolbox.network.get-port@0.0.121
-      esbuild: registry.npmjs.org/esbuild@0.17.18
     dev: false
 
   file:hooks/use-hello-world(react@18.2.0):

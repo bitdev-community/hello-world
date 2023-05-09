@@ -11,19 +11,19 @@
 {
     "api-routes/hello": {
         "scope": "greetings.hello-world",
-        "version": "0.0.7",
+        "version": "0.0.9",
         "mainFile": "index.ts",
         "rootDir": "api-routes/hello"
     },
     "app-types/node-app-type": {
         "scope": "greetings.development",
-        "version": "0.0.1",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "development/app-types/node-app-type"
     },
     "apps/hello-world-api": {
         "scope": "greetings.hello-world",
-        "version": "0.0.16",
+        "version": "0.0.19",
         "mainFile": "index.ts",
         "rootDir": "apps/hello-world-api"
     },
@@ -35,13 +35,13 @@
     },
     "deployers/ssh-deployer": {
         "scope": "greetings.development",
-        "version": "0.0.10",
+        "version": "0.0.13",
         "mainFile": "index.ts",
         "rootDir": "development/deployers/ssh-deployer"
     },
     "envs/node-env": {
         "scope": "greetings.development",
-        "version": "0.0.7",
+        "version": "0.0.9",
         "mainFile": "index.ts",
         "rootDir": "development/envs/node-env"
     },
