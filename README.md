@@ -82,3 +82,5 @@ greeters.hello-world/api-routes/hello
 ```
 
 **Note**: After doing this, you will get issues with the local dependency paths. Let's ignore it until we `add` all the components into `bit`.
+
+**Example:** [Code](https://github.com/teambit-community/hello-world/tree/bit-apps)
