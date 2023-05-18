@@ -41,13 +41,14 @@ This branch contains a classical React frontend and an Express.js API. They are 
 Run React App: Go to `/web` directory and execute `npm run start` command. 
 Run Express.js API: Go to `/api` directory and execute `npm run start` command.
 
-## Bit-Init
-**Example:** [Code](https://github.com/teambit-community/hello-world/tree/bit-init)
+## Transition to Bit Component
 
 ## Initializing Bit Workspace
 First at the project root directory, `bit init` command is used and workspace.json was updated to use:
 1. `greeters` for the workspace.
 2. `development` for the default scope.
+
+**Example:** [Code](https://github.com/teambit-community/hello-world/tree/bit-init)
 
 Now, let's create the development environments for both React and Node which we use to build, develop and test Bit components. The Envs are also tracked as components in Bit so that you can share them with your development team.
 
@@ -81,9 +82,3 @@ greeters.hello-world/api-routes/hello
 ```
 
 **Note**: After doing this, you will get issues with the local dependency paths. Let's ignore it until we `add` all the components into `bit`.
-
-## Making them Bit Components
-
-
-
-
