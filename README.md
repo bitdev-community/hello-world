@@ -6,7 +6,7 @@
 # Monolith to Bit Components: Step by Step Transition Guide
 This repository will take you through the evolution of a basic hello-world application that uses React for the frontend (`/web`) and Express.js for the API (`/api`). Initially, the application is designed as monolith using React and Express.js. It is then transitioned into an independent component architecture highlighting each step in the process.
 
-## Full-Stack React and Express Application 
+# Stage 1: Monolithic Architecture
 **Example:** [Code](https://github.com/teambit-community/hello-world/tree/pre-bit)
 
 This branch contains a classical React frontend and an Express.js API. They are deployed to Netlify and to a Virtual Machine using SSH.
@@ -40,7 +40,7 @@ This branch contains a classical React frontend and an Express.js API. They are 
 Run React App: Go to `/web` directory and execute `npm run start` command. 
 Run Express.js API: Go to `/api` directory and execute `npm run start` command.
 
-## Transition to Bit Component
+# Stage 2: Independent Component Architecture
 
 ## Initializing Bit Workspace
 First at the project root directory, `bit init` command is used and workspace.json was updated to use:
