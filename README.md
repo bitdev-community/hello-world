@@ -4,12 +4,10 @@
 [![Scope Development](https://img.shields.io/badge/Scope-Development_(4)-820596)](https://bit.cloud/greetings/development)
 [![Scope Design](https://img.shields.io/badge/Scope-Design_(2)-820596)](https://bit.cloud/greetings/design)
 
-# `Hello World` App Evolution
-This repository will take you through the evolution of a basic hello-world application that incorporates React for the frontend (`/web`) and Express.js for the API (`/api`). Initially, the application follows a conventional React and Express.js architecture, but gradually evolves into an independent component architecture.
+# Monolith to Bit Components: Step by Step Transition Guide
+This repository will take you through the evolution of a basic hello-world application that uses React for the frontend (`/web`) and Express.js for the API (`/api`). Initially, the application is designed as monolith using React and Express.js. It is then transitioned into an independent component architecture highlighting each step in the process.
 
-As you progress through the different stages of the transition, you'll find the code in corresponding branch in this repository.
-
-## Pre-Bit
+## Full-Stack React and Express Application 
 **Example:** [Code](https://github.com/teambit-community/hello-world/tree/pre-bit)
 
 This branch contains a classical React frontend and an Express.js API. They are deployed to Netlify and to a Virtual Machine using SSH.
