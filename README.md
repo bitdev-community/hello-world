@@ -1,3 +1,9 @@
+[![Bit Org Greeings](https://img.shields.io/badge/Bit-@greetings-2C00C3)](https://bit.cloud/greetings)
+
+[![Scope Hello World](https://img.shields.io/badge/Scope-Hello_World_(5)-820596)](https://bit.cloud/greetings/hello-world)
+[![Scope Development](https://img.shields.io/badge/Scope-Development_(4)-820596)](https://bit.cloud/greetings/development)
+[![Scope Design](https://img.shields.io/badge/Scope-Design_(2)-820596)](https://bit.cloud/greetings/design)
+
 # `Hello World` App Evolution
 This repository will take you through the evolution of a basic hello-world application that incorporates React for the frontend (`/web`) and Express.js for the API (`/api`). Initially, the application follows a conventional React and Express.js architecture, but gradually evolves into an independent component architecture.
 
