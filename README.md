@@ -88,7 +88,7 @@ greeters.hello-world/api-routes/hello
 
 **Example:** [Code](https://github.com/teambit-community/hello-world/tree/bit-apps)
 
-## All Components & Scopes
+## Components & Scopes
 
 | Scope           | Components                                                                      |
 |---------------------------|----------------------------------------------------------------------------|
