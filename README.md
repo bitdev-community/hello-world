@@ -1,5 +1,4 @@
 [![Bit Org Greeings](https://img.shields.io/badge/Bit-@greetings-2C00C3)](https://bit.cloud/greetings)
-
 [![Scope Hello World](https://img.shields.io/badge/Scope-Hello_World_(5)-820596)](https://bit.cloud/greetings/hello-world)
 [![Scope Development](https://img.shields.io/badge/Scope-Development_(4)-820596)](https://bit.cloud/greetings/development)
 [![Scope Design](https://img.shields.io/badge/Scope-Design_(2)-820596)](https://bit.cloud/greetings/design)
