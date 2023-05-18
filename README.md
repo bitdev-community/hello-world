@@ -60,9 +60,14 @@ First let's start by creating a `React Env` by running `bit create react-env env
 ### Creating the `Node Env`
 Similarly let's create a Node Env for the express components by executing `bit create node-env envs/node-env --aspect teambit.harmony/node` command.
 
-[![Component React Env](https://img.shields.io/badge/Node-v0.0.9-brightgreen)](https://bit.cloud/greetings/development/envs/node-env)
+[![Component Node Env](https://img.shields.io/badge/Node_Env-v0.0.9-brightgreen)](https://bit.cloud/greetings/development/envs/node-env)
 
 ## Extracting the Components
+| Scope           | Components                                                                      |
+|---------------------------|----------------------------------------------------------------------------|
+| [![Scope Hello World](https://img.shields.io/badge/Scope-Hello_World_(5)-820596)](https://bit.cloud/greetings/hello-world) | [![Component Hello](https://img.shields.io/badge/Hello-v0.0.9-brightgreen)](https://bit.cloud/greetings/hello-world/api-routes/hello) [![Component Use Hello World](https://img.shields.io/badge/Use_Hello_World-v0.0.2-brightgreen)](https://bit.cloud/greetings/hello-world/hooks/use-hello-world) [![Component Landing Page](https://img.shields.io/badge/Landing_Page-v0.0.3-brightgreen)](https://bit.cloud/greetings/hello-world/pages/landing-page) [![Component Hello World App](https://img.shields.io/badge/Hello_World_App-v0.0.5-brightgreen)](https://bit.cloud/greetings/hello-world/apps/hello-world-app) [![Component Hello World API](https://img.shields.io/badge/Hello_World_Api-v0.0.19-brightgreen)](https://bit.cloud/greetings/hello-world/apps/hello-world-api) |
+| [![Scope Design](https://img.shields.io/badge/Scope-Design_(2)-820596)](https://bit.cloud/greetings/design) | [![Component Button](https://img.shields.io/badge/Button-v0.0.3-brightgreen)](https://bit.cloud/greetings/hello-world/design/ui/button) [![Component Button](https://img.shields.io/badge/Heading-v0.0.2-brightgreen)](https://bit.cloud/greetings/hello-world/design/ui/heading) |
+| [![Scope Development](https://img.shields.io/badge/Scope-Development_(4)-820596)](https://bit.cloud/greetings/development) | [![Component SSH Deployer](https://img.shields.io/badge/SSH_Deployer-v0.0.13-brightgreen)](https://bit.cloud/greetings/development/deployers/ssh-deployer) [![Component React Env](https://img.shields.io/badge/React_Env-v0.0.2-brightgreen)](https://bit.cloud/greetings/development/envs/react-env) [![Component Node Env](https://img.shields.io/badge/Node_Env-v0.0.9-brightgreen)](https://bit.cloud/greetings/development/envs/node-env) [![Component Node App Type](https://img.shields.io/badge/Node_App_Type-v0.0.3-brightgreen)](https://bit.cloud/greetings/development/app-types/node-app-type)|
 
 ### `Web` project
 
