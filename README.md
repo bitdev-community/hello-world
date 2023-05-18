@@ -55,8 +55,12 @@ Now, let's create the development environments for both React and Node which we 
 ### Creating the `React Env`
 First let's start by creating a `React Env` by running `bit create react-env envs/react-env --aspect teambit.react/react-env` command.
 
+[![Component React Env](https://img.shields.io/badge/React_Env-v0.0.2-brightgreen)](https://bit.cloud/greetings/development/envs/react-env)
+
 ### Creating the `Node Env`
 Similarly let's create a Node Env for the express components by executing `bit create node-env envs/node-env --aspect teambit.harmony/node` command.
+
+[![Component React Env](https://img.shields.io/badge/Node-v0.0.9-brightgreen)](https://bit.cloud/greetings/development/envs/node-env)
 
 ## Extracting the Components
 
