@@ -1,2 +1,2 @@
-/api/*  http://13.228.159.236:4000/api/:splat"  200
+/api/hello  /api-mock/hello.txt  200 # Mock API for Demo (later replace with /api/*  http://<api-domain>/api/:splat"  200)
 /*      /web/index.html                         200
