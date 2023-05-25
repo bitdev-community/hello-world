@@ -6,3 +6,7 @@
 [build.environment]
   NODE_ENV = "production"
   
+[[redirects]]
+  from = "/api/hello"
+  to = "/api-mock/hello.txt"
+  status = 200
